@@ -1,4 +1,4 @@
-# node-picogw
+# PicoGW
 
 This repository is targeting at npm release of [PicoGW](https://github.com/KAIT-HEMS/PicoGW).
 The old repository will be remain public for a while, but not actively maintained any more.
