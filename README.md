@@ -8,6 +8,7 @@ The new version will be developed here. It adopts more sophisticated plugin arch
 # Plugin repositories
 
 + https://github.com/KAIT-HEMS/node-picogw-plugin-admin  (mandatory)
++ https://github.com/KAIT-HEMS/node-picogw-plugin-web  (mandatory)
 + https://github.com/KAIT-HEMS/node-picogw-plugin-echonet
 + https://github.com/KAIT-HEMS/node-picogw-plugin-db
 + https://github.com/KAIT-HEMS/node-picogw-plugin-openweathermap
