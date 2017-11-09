@@ -1,7 +1,7 @@
 # PicoGW
 
 This repository is targeting at npm release of [PicoGW](https://github.com/KAIT-HEMS/PicoGW).
-The old repository will be remain public for a while, but not actively maintained any more.
+The old repository will remain public for a while, but not actively maintained any more.
 
 The new version will be developed here. It adopts more sophisticated plugin architecture.
 
