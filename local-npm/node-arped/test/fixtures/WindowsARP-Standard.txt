@@ -1,0 +1,10 @@
+
+Interface: 192.168.100.60 --- 0xa
+  Internet Address      Physical Address      Type
+  192.168.0.1           00-01-02-0a-0b-0c     dynamic
+  192.168.0.2           00-aa-22-bb-33-cc     dynamic
+
+Interface: 192.168.100.63 --- 0x1a
+  Internet Address      Physical Address      Type
+  192.168.0.3           11-bb-33-cc-44-dd     dynamic
+

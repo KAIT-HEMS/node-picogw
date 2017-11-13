@@ -1,0 +1,26 @@
+{
+	"title": "OpenWeatherMap Settings"
+	,"type": "object"
+	,"properties":{
+		"APPID":{
+			"title": "OpenWeatherMap API key"
+			,"type":"string"
+			,"format":"password"
+			,"description" : "You can obtain your own api key by creating OpenWeatherMap account on https://home.openweathermap.org/users/sign_up"
+		}
+		,"q":{
+			"title": "City name such as 'London' or 'Tokyo'."
+			,"type":"string"
+			,"description" : "You can also add ISO3166 contry code such as London,uk"
+		}
+		,"lat":{
+			"title": "Latitude"
+			,"type":"string"
+			,"description" : "Latitude and Longitude must be specified together. Otherwise, City name is used."
+		}
+		,"lon":{
+			"title": "Longitude"
+			,"type":"string"
+		}
+	}
+}

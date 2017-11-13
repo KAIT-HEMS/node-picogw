@@ -1,0 +1,15 @@
+{
+	"title": "ECHONET Lite Settings"
+	,"type": "object"
+	,"properties":{
+		"81":{
+			"title": "Installation Location"
+			,"type": "string"
+			,"enum":[
+				"unknown","living","dining","kitchen","bathroom","washroom","lavatory"
+				,"passage","room","stairway","entrance","closet","garden","parking"
+				,"balcony","others"
+			]
+		}
+	}
+}

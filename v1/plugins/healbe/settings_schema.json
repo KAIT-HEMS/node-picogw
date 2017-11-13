@@ -1,0 +1,16 @@
+{
+	"title": "Healbe Settings (Please signin again when access token expires.)"
+	,"type": "object"
+	,"properties":{
+		"email":{
+			"title": "Healbe email address"
+			,"type":"string"
+			,"description" : "You can also add ISO3166 contry code such as London,uk"
+		}
+		,"password":{
+			"title": "Healbe Password"
+			,"type":"string"
+			,"format":"password"
+		}
+	}
+}

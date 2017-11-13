@@ -1,0 +1,11 @@
+{
+	"title": "Slack Settings"
+	,"type": "object"
+	,"properties": {
+		"bottoken": {
+			"title": "Slack bot token",
+			"type": "string",
+			"description": "Create a new bot on https://[Your Team].slack.com/apps/A0F7YS25R-bots and input the generated API token above."
+		}
+	}
+}

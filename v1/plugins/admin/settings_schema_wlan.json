@@ -1,0 +1,26 @@
+{
+	"title":"Access points"
+	,"type":"object"
+	,"properties":{
+		"apname":{
+			"title":"AP"
+			,"type":"string"
+			,"enum":[]
+		}
+		,"apname_manual":{
+			"title":"AP name (if specified, the above selection is ignored)"
+			,"type":"string"
+		}
+		,"password":{
+			"title":"AP password"
+			,"type":"string"
+			,"format":"password"
+		}
+		,"password2":{
+			"title":"AP password confirmation (input the same one)"
+			,"type":"string"
+			,"format":"password"
+		}
+	}
+
+}
