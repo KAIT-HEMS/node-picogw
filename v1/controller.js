@@ -1,9 +1,9 @@
 "use strict";
 
-const VERSION = 'v1';
 const CALL_TIMEOUT = 60*1000 ;
 
 var fs = require('fs');
+const pluginLoader = require('plugin-loader');
 
 var PluginInterface = require('./PluginInterface.js').PluginInterface ;
 
@@ -12,72 +12,56 @@ var admin ;
 
 var globals ;
 var Plugins = {} ;
-exports.init = function(_globals /*,clientFactory*/){
-	globals = _globals ;
-	return new Promise( function(ac,rj){
-		// Scan plugins
-		const PLUGINS_FOLDER = './'+VERSION+'/plugins/' ;
-		try {
-			fs.statSync( PLUGINS_FOLDER ) ;
-			fs.readdir( PLUGINS_FOLDER, (err, files) => {
-				if (err){ rj('No plugin folder found.'); return; }
 
-				// Admin plugin should be initialized first.
-				var plugin_names = ['admin'] ;
+exports.init = async function(_globals /*,clientFactory*/){
+	globals = _globals;
+    const plugs = await pluginLoader.list();
+    log('Plugins registeration started.');
+    // Admin plugin should be initialized first
+    return registerplugin(plugs, 'admin');
+}
 
-				files.filter(dirname => {
-					var fo = fs.lstatSync(PLUGINS_FOLDER + dirname) ;
-					return fo.isDirectory() || fo.isSymbolicLink();
-				}).forEach(dirname => {
-					if( dirname == 'admin') return ;
-					plugin_names.push(dirname) ;
-		   	 	}) ;
-		   	 	log('Plugins registeration started.') ;
-		   	 	function registerplugin(){
-		   	 		var plugin_name = plugin_names.shift() ;
-					var pc = new PluginInterface(
-						{VERSION:VERSION,admin:admin,PubSub:globals.PubSub}
-						,plugin_name) ;
-					var exportmethods = {} ;
-					[ 'publish','log','on','off'
-						,'getMACFromIPv4Address','setNetCallbacks','getMACs'
-						,'getSettingsSchema','getSettings'
-						,'setOnGetSettingsSchemaCallback','setOnGetSettingsCallback','setOnSettingsUpdatedCallback'
-						,'getpath','getprefix']
-						.forEach(methodname => {
-						exportmethods[methodname] = function(){
-							return pc[methodname].apply(pc,arguments);
-						} ;
-					}) ;
-					exportmethods.localStorage = pc.localStorage ;
-					exportmethods.localSettings = pc.localSettings ;
-
-					try {
-						var pobj = require('./plugins/' + plugin_name + '/index.js') ;
-						// Plugin init must return procedure call callback function.
-						Promise.all([pobj.init(exportmethods)]).then( p => {
-							pc.procCallback = p[0] ;
-
-							Plugins[plugin_name] = pc ;
-							if( plugin_name === 'admin' )	admin = pobj ;
-							log(plugin_name+' plugin initiaized') ;
-				   	 		if( plugin_names.length == 0 ){ac('All plugins initialization process is ended.'); return;}
-				   	 		registerplugin() ;
-						}).catch(e=>{
-							log(plugin_name+' plugin could not be initiaized') ;
-				   	 		if( plugin_names.length == 0 ){ac('All plugins initialization process is ended.'); return;}
-				   	 		registerplugin() ;
-						}) ;
-
-					} catch (e){log('Error in initializing '+plugin_name+' plugin: '+JSON.stringify(e)) ;}
-				}
-	   	 		registerplugin() ;
-			}) ;
-		} catch(e){
-			rj('No plugins exists.') ;
-		}
+async function registerplugin(plugs, pluginName){
+    const requirePath = plugs.requirePath;
+    delete plugs[pluginName];
+	var pc = new PluginInterface(
+		{VERSION:'v1', admin:admin, PubSub:globals.PubSub} // TODO:remove VERSION
+		,pluginName) ;
+	var exportmethods = {} ;
+	[ 'publish','log','on','off','getNetIDFromIPv4Address','setNetIDCallbacks'
+		,'getSettingsSchema','getSettings'
+		,'setOnGetSettingsSchemaCallback','setOnGetSettingsCallback','setOnSettingsUpdatedCallback'
+		,'getpath','getprefix']
+		.forEach(methodname => {
+		exportmethods[methodname] = function(){
+			return pc[methodname].apply(pc,arguments);
+		} ;
 	}) ;
-} ;
+	exportmethods.localStorage = pc.localStorage ;
+	exportmethods.localSettings = pc.localSettings ;
+
+	var pobj = require(requirePath) ;
+    const initPlugin = async function (pobj) {
+	    return pobj.init(exportmethods);
+    }
+    return initPlugin(pobj, exportmethods).then( p => {
+	    // Plugin init must return procedure call callback function.
+		pc.procCallback = p;
+		Plugins[pluginName] = pc ;
+		if( pluginName === 'admin' )	admin = pobj ;
+		log(pluginName+' plugin initiaized') ;
+	}).catch(e=>{
+		log(pluginName+' plugin could not be initiaized') ;
+        log(e);
+	}).then(() => {
+        const names = Object.keys(plugs);
+        if( names.length == 0 ){
+            return 'All plugins initialization process is ended.';
+        }
+        return registerplugin(plugs, names[0]) ;
+    });
+}
+
 
 exports.callproc = function(params){
 	var method = params.method ;
