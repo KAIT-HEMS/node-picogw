@@ -3,7 +3,7 @@
 const CALL_TIMEOUT = 60*1000 ;
 
 var fs = require('fs');
-const pluginLoader = require('plugin-loader');
+const pluginLoader = require('../lib/plugin-loader');
 
 var PluginInterface = require('./PluginInterface.js').PluginInterface ;
 
@@ -22,16 +22,17 @@ exports.init = async function(_globals /*,clientFactory*/){
 }
 
 async function registerplugin(plugs, pluginName){
-    const requirePath = plugs.requirePath;
+    const requirePath = plugs[pluginName].requirePath;
     delete plugs[pluginName];
 	var pc = new PluginInterface(
 		{VERSION:'v1', admin:admin, PubSub:globals.PubSub} // TODO:remove VERSION
 		,pluginName) ;
 	var exportmethods = {} ;
-	[ 'publish','log','on','off','getNetIDFromIPv4Address','setNetIDCallbacks'
-		,'getSettingsSchema','getSettings'
-		,'setOnGetSettingsSchemaCallback','setOnGetSettingsCallback','setOnSettingsUpdatedCallback'
-		,'getpath','getprefix']
+	[ 'publish','log','on','off'
+	  ,'getMACFromIPv4Address','setNetCallbacks','getMACs'
+	  ,'getSettingsSchema','getSettings'
+	  ,'setOnGetSettingsSchemaCallback','setOnGetSettingsCallback','setOnSettingsUpdatedCallback'
+	  ,'getpath','getprefix']
 		.forEach(methodname => {
 		exportmethods[methodname] = function(){
 			return pc[methodname].apply(pc,arguments);
