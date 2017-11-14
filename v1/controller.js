@@ -13,18 +13,45 @@ var admin ;
 var globals ;
 var Plugins = {} ;
 
-exports.init = async function(_globals /*,clientFactory*/){
+module.exports.init = async function(_globals /*,clientFactory*/){
 	globals = _globals;
-    const plugs = await pluginLoader.list();
+    let plugs = await pluginLoader.list();
+    plugs = sortPlugins(plugs);
     log('Plugins registeration started.');
     // Admin plugin should be initialized first
-    return registerplugin(plugs, 'admin');
+    await registerplugin(plugs.shift());
+    await Promise.all(plugs.map((plug) => {
+        registerplugin(plug);
+    }));
+    return 'All plugins initialization process is ended.';
 }
 
-async function registerplugin(plugs, pluginName){
-    const requirePath = plugs[pluginName].requirePath;
-    delete plugs[pluginName];
-    const modulePath = require.resolve(requirePath);
+function sortPlugins(plugs) {
+    return plugs.sort((a, b) => {
+        if (a.name === b.name) {
+            return 0;
+        } else if (a.name === 'admin' && b.name !== 'admin') {
+            return -1;
+        } else if (a.name !== 'admin' && b.name === 'admin') {
+            return 1;
+        } else if (a.name > b.name) {
+            return 1;
+        } else {
+            return -1;
+        }
+    });
+}
+
+async function registerplugin(plug){
+    const pluginName = plug.name;
+    const requirePath = plug.requirePath;
+    let modulePath;
+    try {
+        modulePath = require.resolve(requirePath);
+    } catch(e) {
+        //console.log('can\'t load plugin.', pluginName);
+        return;
+    }
 	var pc = new PluginInterface(
 		{VERSION:'v1', admin:admin, PubSub:globals.PubSub} // TODO:remove VERSION
 		,pluginName, modulePath) ;
@@ -55,13 +82,7 @@ async function registerplugin(plugs, pluginName){
 	}).catch(e=>{
 		log(pluginName+' plugin could not be initiaized') ;
         log(e);
-	}).then(() => {
-        const names = Object.keys(plugs);
-        if( names.length == 0 ){
-            return 'All plugins initialization process is ended.';
-        }
-        return registerplugin(plugs, names[0]) ;
-    });
+	});
 }
 
 
