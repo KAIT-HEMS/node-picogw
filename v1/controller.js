@@ -24,9 +24,10 @@ exports.init = async function(_globals /*,clientFactory*/){
 async function registerplugin(plugs, pluginName){
     const requirePath = plugs[pluginName].requirePath;
     delete plugs[pluginName];
+    const modulePath = require.resolve(requirePath);
 	var pc = new PluginInterface(
 		{VERSION:'v1', admin:admin, PubSub:globals.PubSub} // TODO:remove VERSION
-		,pluginName) ;
+		,pluginName, modulePath) ;
 	var exportmethods = {} ;
 	[ 'publish','log','on','off'
 	  ,'getMACFromIPv4Address','setNetCallbacks','getMACs'
