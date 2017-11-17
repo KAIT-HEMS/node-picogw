@@ -69,20 +69,54 @@ async function registerplugin(plug){
 	exportmethods.localStorage = pc.localStorage ;
 	exportmethods.localSettings = pc.localSettings ;
 
-	var pobj = require(requirePath) ;
-    const initPlugin = async function (pobj) {
-	    return pobj.init(exportmethods);
+    let pobj;
+    try {
+        pobj = require(requirePath);
+    } catch(e) {
+        console.log('failed to require plugin.', pluginName);
+        console.error(e);
+        return;
     }
-    return initPlugin(pobj, exportmethods).then( p => {
-	    // Plugin init must return procedure call callback function.
-		pc.procCallback = p;
-		Plugins[pluginName] = pc ;
-		if( pluginName === 'admin' )	admin = pobj ;
-		log(pluginName+' plugin initiaized') ;
-	}).catch(e=>{
-		log(pluginName+' plugin could not be initiaized') ;
-        log(e);
-	});
+
+    if (!plug.legacy) {
+        return initPlugin(pobj).catch((e) => {
+            console.error(e)
+        });
+        async function initPlugin(pobj) {
+            if ('init' in pobj) {
+                await pobj.init(exportmethods).catch(e=>{
+                    log(pluginName+' plugin could not be initiaized') ;
+                    log(e);
+                    return;
+                });
+            }
+            if (plug.role.includes('api') && 'callproc' in pobj) {
+                pc.procCallback = pobj.callproc;
+            }
+            Plugins[pluginName] = pc;
+            if (pluginName === 'admin') {
+                admin = pobj;
+            }
+            log(pluginName + ' plugin initiaized');
+        }
+    } else {
+        //console.log(`The plugin ${pluginName} needs to inherit the plugin class.`);
+
+        // Delete this codes as soon as the migration of the new plugin architecture is completed.
+        const initPlugin = async function (pobj) {
+            return pobj.init(exportmethods);
+        }
+        return initPlugin(pobj).then( p => {
+            // Plugin init must return procedure call callback function.
+            pc.procCallback = p;
+            Plugins[pluginName] = pc ;
+            if( pluginName === 'admin' )    admin = pobj ;
+            log(pluginName+' plugin initiaized') ;
+        }).catch(e=>{
+            log(pluginName+' plugin could not be initiaized') ;
+            log(e);
+        });
+    }
 }
 
 
