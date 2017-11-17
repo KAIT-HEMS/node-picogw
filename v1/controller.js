@@ -1,6 +1,12 @@
 "use strict";
 
 const CALL_TIMEOUT = 60*1000 ;
+const ROLE = {
+    API : 'api',
+    CLIENT : 'client',
+    UI : 'ui',
+};
+
 
 var fs = require('fs');
 const pluginLoader = require('../lib/plugin-loader');
@@ -90,7 +96,7 @@ async function registerplugin(plug){
                     return;
                 });
             }
-            if (plug.role.includes('api') && 'callproc' in pobj) {
+            if (plug.role.includes(ROLE.API) && 'callproc' in pobj) {
                 pc.procCallback = pobj.callproc;
             }
             Plugins[pluginName] = pc;
