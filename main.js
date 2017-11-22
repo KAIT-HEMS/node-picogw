@@ -1,7 +1,7 @@
 // PicoGW = Minimalist's Home Gateway
 var fs = require('fs');
 
-const VERSIONS = ['v1','v2'] ;
+const VERSIONS = ['v1'] ;
 var VERSION_CTRLS = {} ;	// Stores controller objects
 var log = console.log ;
 
@@ -28,7 +28,7 @@ cmd_opts.parse([
 ],true);
 
 // Start clients
-const PubSub = require('./clients/PubSub.js').PubSub ;
+const PubSub = require('./lib/PubSub.js').PubSub ;
 const client = require('./clients/index.js') ;
 client.init( { VERSIONS:VERSIONS,VERSION_CTRLS:VERSION_CTRLS,PubSub:PubSub,cmd_opts:cmd_opts } ).catch(e=>{
     console.error('Client initialization failed: '+e) ;
@@ -37,7 +37,7 @@ client.init( { VERSIONS:VERSIONS,VERSION_CTRLS:VERSION_CTRLS,PubSub:PubSub,cmd_o
 
 // Initialize each versions and store controller objects into VERSION_CTRLS
 VERSIONS.forEach(VERSION=>{
-    var ctrl = require('./'+VERSION+'/controller.js') ;
+    var ctrl = require('./lib/controller.js') ;
     ctrl.init({PubSub:PubSub,cmd_opts:cmd_opts},client.clientFactory).then(re=>{
         log('API version '+VERSION+' initialized.') ;
     }).catch(console.error) ;

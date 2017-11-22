@@ -9,7 +9,7 @@ const SingleFileLocalStorage = MyLocalStorage.SingleFileLocalStorage ;
 const MYPATH  = __filename.split(pathm.sep).slice(0,-1).join('/') ;
 const localStorage = new SingleFileLocalStorage(MYPATH+'/localstorage.json') ;
 
-var ClientInterface = require('./ClientInterface.js').ClientInterface ;
+var ClientInterface = require('../lib/ClientInterface.js').ClientInterface ;
 var globals ;
 
 var log = msg=>{console.log('client manager> '+msg);} ;
