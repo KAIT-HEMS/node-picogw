@@ -17,6 +17,7 @@
     "npm": "^5.5.1",
     "opts": "^1.2.6",
     "picogw-plugin-echonet": "github:KAIT-HEMS/node-picogw-plugin-echonet",
+    "picogw-plugin-web": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-web.git",
     "pidof": "~1.0.2",
     "ping": "^0.2.2",
     "read": "~1.0.3",
