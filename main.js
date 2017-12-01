@@ -1,9 +1,7 @@
 // PicoGW = Minimalist's Home Gateway
-var fs = require('fs');
-
-const VERSIONS = ['v1'] ;
-var VERSION_CTRLS = {} ;	// Stores controller objects
-var log = console.log ;
+const controller = require('./lib/controller');
+const PubSub = require('./lib/PubSub').PubSub;
+const log = console.log;
 
 // Support for termux
 if( process.platform == 'android' )
@@ -27,24 +25,11 @@ cmd_opts.parse([
     },
 ],true);
 
-// Start clients
-const PubSub = require('./lib/PubSub.js').PubSub ;
-const client = require('./clients/index.js') ;
-client.init( { VERSIONS:VERSIONS,VERSION_CTRLS:VERSION_CTRLS,PubSub:PubSub,cmd_opts:cmd_opts } ).catch(e=>{
-    console.error('Client initialization failed: '+e) ;
+
+controller.init({PubSub:PubSub,cmd_opts:cmd_opts}).then(re=>{
+    log('Plugins have been initialized.') ;
+}).catch(e => {
+    console.error(e);
 })
 
-
-// Initialize each versions and store controller objects into VERSION_CTRLS
-VERSIONS.forEach(VERSION=>{
-    var ctrl = require('./lib/controller.js') ;
-    ctrl.init({PubSub:PubSub,cmd_opts:cmd_opts},client.clientFactory).then(re=>{
-        log('API version '+VERSION+' initialized.') ;
-    }).catch(console.error) ;
-    VERSION_CTRLS[VERSION] = ctrl ;
-}) ;
-
-console.log('PicoGW started.') ;
-
-// Omit shell disconnection at Starbucks
-//setInterval(()=>{log(Date.now());},10000) ;
+log('PicoGW started.') ;
