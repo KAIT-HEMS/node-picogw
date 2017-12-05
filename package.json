@@ -14,6 +14,7 @@
     "picogw-plugin-db": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-db.git",
     "picogw-plugin-echonet": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-echonet.git",
     "picogw-plugin-healbe": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-healbe.git",
+    "picogw-plugin-openweathermap": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-openweathermap.git",
     "picogw-plugin-slack": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-slack.git",
     "picogw-plugin-web": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-web.git",
     "read-package-tree": "^5.1.6"
