@@ -4,7 +4,6 @@
   "description": "Minimalist's Home Gateway",
   "main": "main.js",
   "dependencies": {
-    "botkit": "^0.6.4",
     "cryptico": "^1.0.2",
     "node-localstorage": "^1.3.0",
     "node-red": "^0.17.5",
@@ -14,6 +13,7 @@
     "picogw-plugin-admin": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-admin.git",
     "picogw-plugin-db": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-db.git",
     "picogw-plugin-echonet": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-echonet.git",
+    "picogw-plugin-slack": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-slack.git",
     "picogw-plugin-web": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-web.git",
     "read-package-tree": "^5.1.6"
   },
