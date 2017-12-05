@@ -12,6 +12,7 @@
     "npm": "^5.5.1",
     "opts": "^1.2.6",
     "picogw-plugin-admin": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-admin.git",
+    "picogw-plugin-db": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-db.git",
     "picogw-plugin-echonet": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-echonet.git",
     "picogw-plugin-web": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-web.git",
     "read-package-tree": "^5.1.6"
