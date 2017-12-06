@@ -12,6 +12,7 @@ v1/plugins/healbe/settings.json
 v1/plugins/echonet/makercodes.json
 v1/plugins/talk
 v1/plugins/mesh
+storage
 
 # Named pipes for Node-RED
 v2/pipe_r
