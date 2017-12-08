@@ -1,0 +1,13 @@
+{
+  "extends": ["google"],
+  "rules": {
+    "no-undef": "error",
+    "indent": "error",
+    "max-len": ["error", {"ignoreComments": true}],
+    "linebreak-style": ["error", "unix"]
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  }
+}
