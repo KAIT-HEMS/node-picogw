@@ -14,16 +14,24 @@ if (process.platform == 'android') {
 let cmdOpts = require('opts');
 cmdOpts.parse([
     {
+        'short': 'c',
+        'long': 'config',
+        'description': 'Path of setting file.'
+            + ' The default is "settings.json" in the current directory',
+        'value': true,
+        'required': false,
+    },
+    {
         'short': 'p',
         'long': 'port',
-        'description': 'Web API port number',
+        'description': 'Web API port number. The default is 8080.',
         'value': true,
         'required': false,
     },
     {
         'long': 'pipe',
-        'description': 'path of named pipes without postfix (_r or _w).'
-            + 'The server is blocked until the pipe client is connected.',
+        'description': 'Path of named pipes without postfix (_r or _w).'
+            + ' The server is blocked until the pipe client is connected.',
         'value': true,
         'required': false,
     },

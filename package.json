@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Minimalist's Home Gateway",
   "main": "main.js",
+  "bin": {
+    "picogw": "bin/picogw"
+  },
   "dependencies": {
     "cryptico": "^1.0.2",
     "fs-extra": "^5.0.0",
