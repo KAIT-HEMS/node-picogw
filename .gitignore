@@ -13,6 +13,7 @@ v1/plugins/echonet/makercodes.json
 v1/plugins/talk
 v1/plugins/mesh
 storage
+settings.json
 
 # Named pipes for Node-RED
 v2/pipe_r
