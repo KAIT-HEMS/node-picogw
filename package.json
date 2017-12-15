@@ -23,8 +23,10 @@
     "read-package-tree": "^5.1.6"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "eslint": "^4.12.1",
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^4.0.1"
   },
   "scripts": {
     "v2api": "npm install node-red ./local-npm/node-red-contrib-picogw ; mkfifo v2/pipe_w v2/pipe_r",
@@ -32,7 +34,7 @@
     "disablev2api": "rm v2/pipe_w v2/pipe_r",
     "removev2api": "npm uninstall node-red ; rm -rf node_modules/node-red-contrib-picogw v2/pipe_w v2/pipe_r",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
