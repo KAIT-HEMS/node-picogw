@@ -7,7 +7,9 @@
     "picogw": "bin/picogw"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "cryptico": "^1.0.2",
+    "express": "^4.16.2",
     "fs-extra": "^5.0.0",
     "node-localstorage": "^1.3.0",
     "npm": "^5.5.1",
@@ -20,7 +22,8 @@
     "picogw-plugin-openweathermap": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-openweathermap.git",
     "picogw-plugin-slack": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-slack.git",
     "picogw-plugin-web": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-web.git",
-    "read-package-tree": "^5.1.6"
+    "read-package-tree": "^5.1.6",
+    "websocket": "^1.0.25"
   },
   "devDependencies": {
     "chai": "^4.1.2",
