@@ -3,7 +3,7 @@
 if [ $# -eq 0 ]; then
 	node --inspect main.js
 elif [ $1 = "break" ]; then
-	node --inspect --debug-brk main.js $2 $3 $3 $5 $6 $7 $8 $9
+	node --inspect-brk main.js $2 $3 $3 $5 $6 $7 $8 $9
 elif [ $1 = "help" ]; then
         echo './debug.sh [break|help]'
 	echo ''
