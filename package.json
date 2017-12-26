@@ -16,7 +16,7 @@
     "opts": "^1.2.6",
     "picogw-plugin-admin": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-admin.git",
     "picogw-plugin-db": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-db.git",
-    "picogw-plugin-echonet": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-echonet.git",
+    "picogw-plugin-echonet": "file:../../../../node-picogw-plugin-echonet",
     "picogw-plugin-healbe": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-healbe.git",
     "picogw-plugin-namedpipe": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-namedpipe.git",
     "picogw-plugin-openweathermap": "git+https://github.com/KAIT-HEMS/node-picogw-plugin-openweathermap.git",
