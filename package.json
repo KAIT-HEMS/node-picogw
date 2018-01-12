@@ -28,21 +28,17 @@
     "mocha": "^4.0.1"
   },
   "scripts": {
-    "v2api": "npm install node-red ./local-npm/node-red-contrib-picogw ; mkfifo v2/pipe_w v2/pipe_r",
-    "enablev2api": "mkfifo v2/pipe_w v2/pipe_r",
-    "disablev2api": "rm v2/pipe_w v2/pipe_r",
-    "removev2api": "npm uninstall node-red ; rm -rf node_modules/node-red-contrib-picogw v2/pipe_w v2/pipe_r",
     "lint": "eslint .",
     "test": "mocha test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KAIT-HEMS/PicoGW.git"
+    "url": "git+https://github.com/KAIT-HEMS/node-picogw.git"
   },
   "author": "KAIT-HEMS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KAIT-HEMS/PicoGW/issues"
+    "url": "https://github.com/KAIT-HEMS/node-picogw/issues"
   },
-  "homepage": "https://github.com/KAIT-HEMS/PicoGW#readme"
+  "homepage": "https://github.com/KAIT-HEMS/node-picogw#README.md"
 }
