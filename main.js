@@ -16,8 +16,8 @@ cmdOpts.parse([
     {
         'short': 'c',
         'long': 'config',
-        'description': 'Path of setting file.'
-            + ' The default is "settings.json" in the current directory',
+        'description': 'Path of config file.'
+            + ' The default is "config.json" in $HOME/.picogw/config.json or ./config.json',
         'value': true,
         'required': false,
     },
