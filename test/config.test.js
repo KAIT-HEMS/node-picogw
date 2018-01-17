@@ -1,28 +1,28 @@
 const fs = require('fs');
 const expect = require('chai').expect;
-const Setting = require('../lib/setting');
+const Config = require('../lib/config');
 
-describe('Setting', function() {
+describe('Config', function() {
     describe('create instance', function() {
         it('should success with no arguments', function() {
-            const s = new Setting();
+            const s = new Config();
             expect(s).to.be.an('object');
             // console.log(s.storagePath);
         });
     });
-    describe('read settings.json', function() {
-        const TMPPATH = './test-settings.json';
+    describe('read configs.json', function() {
+        const TMPPATH = './test-configs.json';
         before(function() {
-            const settings = {
+            const configs = {
                 storagePath: './somewere/storage',
             };
-            fs.writeFileSync(TMPPATH, JSON.stringify(settings, null));
+            fs.writeFileSync(TMPPATH, JSON.stringify(configs, null));
         });
         after(function() {
             fs.unlinkSync(TMPPATH);
         });
         it('should read json\'s key name', function() {
-            const s = new Setting(TMPPATH);
+            const s = new Config(TMPPATH);
             expect(s.storagePath).to.equal('./somewere/storage');
         });
     });
