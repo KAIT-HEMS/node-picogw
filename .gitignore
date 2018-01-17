@@ -1,6 +1,6 @@
 # PicoGW cache
 storage
-settings.json
+config.json
 
 # Logs
 logs
