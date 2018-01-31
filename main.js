@@ -17,7 +17,7 @@ cmdOpts.parse([
         'short': 'c',
         'long': 'config',
         'description': 'Path of config file.'
-            + ' The default is "config.json" in $HOME/.picogw/config.json or ./config.json',
+            + ' The default is "config.json" in $HOME/.picogw/config.json or ./config.json', // eslint-disable-line max-len
         'value': true,
         'required': false,
     },

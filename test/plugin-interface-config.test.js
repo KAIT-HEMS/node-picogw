@@ -14,12 +14,5 @@ describe('PluginInterfaceConfig', function() {
             expect(c.hello).to.equal('world');
             expect(c.a).to.equal(1);
         });
-        it('can\'t overwrite config', function() {
-            const conf = {a: 1};
-            conf.keys = () => Object.keys(conf);
-            const c = new PluginInterfaceConfig(conf);
-            expect(c.a).to.equal(1);
-            expect(() => {c.a = 2}).to.throw(Error);
-        });
     });
 });
