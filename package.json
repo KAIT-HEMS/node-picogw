@@ -30,7 +30,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "istanbul cover _mocha -- test"
+    "test": "istanbul cover _mocha -- test",
+    "postinstall": "test -x \"`command -v termux-fix-shebang`\" && termux-fix-shebang bin/picogw || true"
   },
   "repository": {
     "type": "git",
