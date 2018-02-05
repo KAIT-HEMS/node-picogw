@@ -1,2 +1,6 @@
 #!/usr/bin/env node
-require('../main');
+// require('../main');
+const forever = require('forever-monitor');
+
+const child = new (forever.Monitor)(require.resolve('picogw'));
+child.start();
