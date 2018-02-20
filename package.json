@@ -1,6 +1,6 @@
 {
   "name": "picogw",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "Home/Building Automation Devices Web Gateway Server",
   "main": "main.js",
   "bin": {
