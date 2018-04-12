@@ -3,7 +3,7 @@
 [PicoGW](https://github.com/KAIT-HEMS/node-picogw) is a [Home Automation](https://en.wikipedia.org/wiki/Home_automation) and [Building Automation](https://en.wikipedia.org/wiki/Building_automation) devices gateway server, developed by [Kanagawa Institute of Technology, Smart House Research Center](http://sh-center.org/en/), released under [MIT license](https://opensource.org/licenses/mit-license.php).
 PicoGW converts protocols between device-specific ones and our REST/WebSocket API.
 
-Since this is implemented by simple node.js, it works on various unix-based platforms including Linux, MacOS, Windows (using Bash on Ubuntu on Windows), Android (using [Termux](https://play.google.com/store/apps/details?id=com.termux)).
+Since this is implemented by simple node.js, it works on various unix-based platforms including Linux, MacOS, Windows (using Bash on Ubuntu on Windows), Android (using [Termux](https://play.google.com/store/apps/details?id=com.termux)), and FreeBSD.
 
 <font color='red'>The [old repository](https://github.com/KAIT-HEMS/PicoGW) will remain public for a while, but not actively maintained any more. It will be deleted soon.</font>
 
@@ -17,8 +17,6 @@ $ npm install -g picogw
 
 Note that **a part of our system prefers npm global install be executed without sudo**. For this reason, we strongly recommend to use [nvm (Node Version Manager)](https://github.com/creationix/nvm) to install node.
 
-
-
 Other plugins installation
 
 ```bash
@@ -26,6 +24,24 @@ $ npm install -g picogw-plugin-XXXX
 ```
 
 XXXX : plugin name.
+
+## Running
+
+```bash
+$ picogw
+```
+
+with API port number
+
+```bash
+$ picogw -p 12345 
+```
+
+By default, dynamic files are written into **~/.picogw** directory. If you want to change the directory, copy **config.json.sample** to **config.json** and modify the ingredient. config.json is read from picogw root directory by default. if you want to load from the different location, you can also specify the path by picogw argument.
+
+```bash
+$ picogw -c /path/to/config/file.json 
+```
 
 ## Public plugins
 
@@ -39,6 +55,8 @@ XXXX : plugin name.
 ## Documents
 
 [Partial documents in Japanese](http://lifedesign.tech/picogw/).
+
+[How to develop your own PicoGW plugin](PluginDevelopment.jp.md) in Japanese.
 No English documents yet..sorry.
 
 ## Remarks
