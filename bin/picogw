@@ -1,7 +1,16 @@
 #!/usr/bin/env node
-// require('../main');
 const forever = require('forever-monitor');
-const path = require('path');
-const child = new (forever.Monitor)(require.resolve('picogw'),{cwd:path.dirname(__filename)});
-//const child = new (forever.Monitor)(require.resolve('picogw'));
+
+// Sometimes, npm i -g target directory is missing from module search path.
+// So set this script module path as current path.
+
+let pi = __filename.lastIndexOf('node_modules');
+let pathstr;
+if( pi == -1 ){
+	pathstr = require('path').dirname(__filename);
+} else {
+	pathstr = __filename.substring( 0,pi )+'node_modules';
+}
+
+const child = new (forever.Monitor)(require.resolve('picogw'),{cwd:pathstr});
 child.start();
