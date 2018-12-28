@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // require('../main');
 const forever = require('forever-monitor');
+const path = require('path');
 const child = new (forever.Monitor)(require.resolve('picogw'),{cwd:path.dirname(__filename)});
 //const child = new (forever.Monitor)(require.resolve('picogw'));
 child.start();
