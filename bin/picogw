@@ -12,5 +12,5 @@ if( pi == -1 ){
 	pathstr = __filename.substring( 0,pi )+'node_modules';
 }
 
-const child = new (forever.Monitor)(require.resolve('picogw'),{cwd:pathstr});
+const child = new (forever.Monitor)(require.resolve('picogw'),{cwd:pathstr,args:process.argv});
 child.start();
