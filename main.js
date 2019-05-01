@@ -3,6 +3,9 @@ const controller = require('./lib/controller');
 const PubSub = require('./lib/pub-sub').PubSub;
 const log = console.log;
 
+const package_json = require('./package.json');
+log(`PicoGW \u001b[31mv${package_json.version}\u001b[0m`);
+
 // Support for termux
 if (process.platform == 'android') {
     Object.defineProperty(process, 'platform', {get: function() {
