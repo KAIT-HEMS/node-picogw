@@ -1,6 +1,6 @@
 {
   "name": "picogw",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Home/Building Automation Devices Web Gateway Server",
   "main": "main.js",
   "bin": {
@@ -9,6 +9,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cryptico": "^1.0.2",
+    "echonet-lite": "^2.2.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6",
     "forever-monitor": "^2.0.0",
