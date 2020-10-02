@@ -7,7 +7,8 @@ PicoGW converts protocols between device-specific ones and our REST/WebSocket AP
 
 Since this is implemented by simple node.js, it works on various unix-based platforms including Linux, MacOS, Windows (using Bash on Ubuntu on Windows), Android (using [Termux](https://play.google.com/store/apps/details?id=com.termux)), and FreeBSD.
 
-<font color='red'>The [old repository](https://github.com/KAIT-HEMS/PicoGW) will remain public for a while, but not actively maintained any more. It will be deleted soon.</font>
+<font color='red'>New trial feature! IPv6 ECHONET is now possible by enabling IPv6 from echonet plugin's setting dialog. Now you can acces smart meters!</font>
+<!-- font color='red'>The [old repository](https://github.com/KAIT-HEMS/PicoGW) will remain public for a while, but not actively maintained any more. It will be deleted soon.</font -->
 
 ## Installation
 
