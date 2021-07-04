@@ -1,6 +1,6 @@
 {
   "name": "picogw",
-  "version": "1.1.21",
+  "version": "1.1.22",
   "description": "Home/Building Automation Devices Web Gateway Server",
   "main": "main.js",
   "bin": {
@@ -11,9 +11,9 @@
     "cryptico": "^1.0.2",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6",
-    "forever-monitor": "^2.0.0",
+    "forever-monitor": "^3.0.3",
     "fs-extra": "^8.1.0",
-    "mqtt": "^3.0.0",
+    "mqtt": "^4.2.8",
     "node-localstorage": "^2.1.5",
     "npm": "^6.13.6",
     "opts": "^1.2.7",
