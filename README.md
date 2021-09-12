@@ -7,7 +7,7 @@ PicoGW converts protocols between device-specific ones and our REST/WebSocket AP
 
 Since this is implemented by simple node.js, it works on various unix-based platforms including Linux, MacOS, Windows (using Bash on Ubuntu on Windows), Android (using [Termux](https://play.google.com/store/apps/details?id=com.termux)), and FreeBSD.
 
-<font color='red'>New trial feature! IPv6 ECHONET is now possible by enabling IPv6 from echonet plugin's setting dialog. Now you can acces smart meters!</font>
+<font color='red'>New trial feature! IPv6 ECHONET is now possible by enabling IPv6 from echonet plugin's setting dialog. Now you can access smart meters!</font>
 <!-- font color='red'>The [old repository](https://github.com/KAIT-HEMS/PicoGW) will remain public for a while, but not actively maintained any more. It will be deleted soon.</font -->
 
 ## Installation
@@ -74,7 +74,7 @@ The Web API hosted by PicoGW is a developing version of [Housing API by Daiwa Ho
 
 The concept of this API is as follows:
 
-1. **Simple and easy**. The API basecally follows the concept of REST. At the same time, we tried not to be too strict to the concept. The API can violate the conceptual correctness to achieve easiness. For example, our PubSub model is implemented as a new method of REST.
+1. **Simple and easy**. The API basically follows the concept of REST. At the same time, we tried not to be too strict to the concept. The API can violate the conceptual correctness to achieve easiness. For example, our PubSub model is implemented as a new method of REST.
 2. **Extensible**. The API should support the forthcoming IoT devices without drastically changing the basic calling styles. We adopt plugin architecture to achieve this.
 3. **Independent from device-specific operations**. This is our goal. /v1/ API is really device-dependent, but we try to develop /v2/ API as device-independent one.
 
