@@ -1,6 +1,6 @@
 {
   "name": "picogw",
-  "version": "1.1.23",
+  "version": "1.1.24",
   "description": "Home/Building Automation Devices Web Gateway Server",
   "main": "main.js",
   "bin": {
@@ -19,7 +19,7 @@
     "opts": "^1.2.7",
     "picogw-plugin-admin": "1.0.9",
     "picogw-plugin-db": "1.0.2",
-    "picogw-plugin-echonet": "1.0.11",
+    "picogw-plugin-echonet": "1.0.13",
     "picogw-plugin-macro": "1.1.9",
     "picogw-plugin-web": "1.0.10",
     "read-package-tree": "^5.3.1",

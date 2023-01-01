@@ -1,0 +1,1236 @@
+[33mcommit b1d1c9050582defa87c10b200a6933a2a4758cbf[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 92783b0 8674d49
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Mon May 9 06:48:08 2022 +0000
+
+    Merge branch 'master' of https://github.com/KAIT-HEMS/node-picogw
+
+[33mcommit 92783b08ebb2b372d7ece67a4b3eee7a142a9cc1[m[33m ([m[1;33mtag: v1.1.23[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Mon May 9 06:47:53 2022 +0000
+
+    v1.1.23 web plugin updated
+
+[33mcommit 8674d494ccc55ffe3413cb2d6b5e4f14fcddf46f[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Mon May 9 04:02:27 2022 +0000
+
+    v1.1.22: audit fix
+
+[33mcommit 13dc6932d84467bb5501ef57ca61a858364d418f[m
+Merge: e27ce18 6c8cf80
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Sun Sep 12 18:58:25 2021 +0900
+
+    Merge pull request #3 from ammgws/patch-1
+    
+    docs: fix typos
+    You are right! Thank you so much!
+
+[33mcommit 6c8cf80f841520ce7d4ea30834415903df8dfd46[m
+Author: Jason Nader <ammgws@users.noreply.github.com>
+Date:   Sun Sep 12 16:27:54 2021 +0900
+
+    docs: fix typos
+
+[33mcommit e27ce18eca3f73de835582960f750e1b1bca58ca[m[33m ([m[1;33mtag: v1.1.22[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Sun Jul 4 17:30:42 2021 +0900
+
+    v1.1.22 import more recent packages (and less tested..)
+
+[33mcommit 9333cb3bdaebb86cc8c57611ec6afa73b5ae2b1f[m[33m ([m[1;33mtag: v1.1.21[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Sun Jul 4 17:15:21 2021 +0900
+
+    v1.1.21 arped -> arped-ext in admin plugin
+
+[33mcommit ad9c58d9261aa19cd92f34b3ee3c72cd1a9c3a12[m[33m ([m[1;33mtag: v1.1.20[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Fri Oct 23 11:59:17 2020 +0900
+
+    v1.1.20: echonet smartmeter epcs parsed
+
+[33mcommit 08a750ec550aac2fb533be5fa033404c27bfc3c3[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Sat Oct 3 00:44:15 2020 +0900
+
+    v1.1.19: IPv6 for ECHONET plugin that allows smart meter access
+
+[33mcommit 599e82fb55d3bebd1346342fc10225134b5d4e0f[m[33m ([m[1;33mtag: v1.1.18[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Fri Sep 4 00:53:59 2020 +0900
+
+    v1.1.18 echonet plugin update
+
+[33mcommit e2ed20335dba9ec62ba9bb70d381357c29407641[m[33m ([m[1;33mtag: v1.1.17[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Thu Sep 3 22:32:35 2020 +0900
+
+    v1.1.17
+
+[33mcommit 1ce336de23e16ea567f6a5dad62d1f62a49d946a[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Thu Sep 3 22:31:47 2020 +0900
+
+    Echonet plugin update / Parse panelboard history (c3,c4)
+
+[33mcommit fce9973f5fa6262e2897e1ee38ba362842a94299[m[33m ([m[1;33mtag: v1.1.16[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Thu Aug 27 16:02:52 2020 +0900
+
+    echonet plugin panelboardMetering bugfix & edt conversion
+
+[33mcommit 3ec937c604c97f5cceeaff807b4e890d9082d6f2[m[33m ([m[1;33mtag: v1.1.15[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Thu Jul 30 00:07:52 2020 +0900
+
+    v1.1.15: echonet plugin updated
+
+[33mcommit 4c44148ee9eea3c43460a615d4b7045930432d78[m[33m ([m[1;33mtag: v1.1.14[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Wed Jul 22 13:00:44 2020 +0900
+
+    v1.1.14 shutdown by process.exit(99)
+
+[33mcommit 195051ff6c8b934df80db3ce349ff7d182d55ff4[m[33m ([m[1;33mtag: v1.1.13[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Sun Jul 19 23:42:14 2020 +0900
+
+    v1.1.13: echonet plugin updated
+
+[33mcommit 51c450521d27eb6ceafc459ab34232c2599c6393[m[33m ([m[1;33mtag: v1.1.12[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Tue Jul 7 23:31:21 2020 +0900
+
+    v1.1.12: publish() is added to macro script
+
+[33mcommit d7d54a0b4c3d8434dd69755cf8af355b8fc28442[m[33m ([m[1;33mtag: v1.1.11[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Sun Jun 7 06:30:44 2020 +0900
+
+    v1.1.11 echonet-lite package updated
+
+[33mcommit 12fccc7e59327a320f3efffe55ec1fdbbaeab7ef[m[33m ([m[1;33mtag: v1.1.10[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Wed May 13 12:33:43 2020 +0900
+
+    v1.1.10: timestamp on plugin's log message
+
+[33mcommit 6fb816509d9e7633dd5e7cb3c3451ce08423316f[m[33m ([m[1;33mtag: v1.1.9[m[33m)[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Wed Jan 15 04:19:58 2020 +0000
+
+    v1.1.9: package updated & fixed issue in finding picogw module
+
+[33mcommit b42da5ed4201d102e64b68142e924d37d4a8b787[m
+Author: Shigeru Owada <owd@hoikutech.com>
+Date:   Wed Jan 15 02:57:38 2020 +0000
+
+    packages updates
+
+[33mcommit 80548e4bcae5937ea973bf4a93c4d58ac9590ea5[m[33m ([m[1;33mtag: v1.1.8[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Sep 13 22:48:52 2019 +0900
+
+    v1.1.8: added error check, support for myid update
+
+[33mcommit 6877254e226531c2acf2c5e2c0d5befe0df43f1e[m[33m ([m[1;33mtag: v1.1.7[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Sep 13 19:50:13 2019 +0900
+
+    v1.1.7: Timing bug fix in macro plugin
+
+[33mcommit beee5657a8327298fd5d547cfedbef565820fbf8[m[33m ([m[1;33mtag: v1.1.6[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Sep 13 19:28:37 2019 +0900
+
+    v1.1.6: Timeout for func call
+
+[33mcommit a4f1d3f2a904133025830b7ce13e886ac293ad3e[m[33m ([m[1;33mtag: v1.1.5[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Sep 6 11:36:10 2019 +0900
+
+    v1.1.5: macro plugin can poll in secs or millisecs
+
+[33mcommit 219a5bd972f7eb863540603218d2789b0d65506c[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Fri May 24 12:02:32 2019 +0900
+
+    JP document link
+
+[33mcommit a523c42eb1007f0653467133560f994cbcf288d7[m[33m ([m[1;33mtag: v1.1.4[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Fri May 24 11:59:15 2019 +0900
+
+    v1.1.4: mqtt topic change, settings fail error handling
+
+[33mcommit c4f88fd501f9b548c116ec0148aa20e799764d6a[m[33m ([m[1;33mtag: v1.1.3[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Mon May 13 13:21:25 2019 +0900
+
+    v1.1.3: macro plugin update
+
+[33mcommit f518b932f55d4611ab88a1b3ce794b19fae14dd6[m[33m ([m[1;33mtag: v1.1.2[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu May 2 15:26:48 2019 +0900
+
+    v1.1.2 macro plugin update
+
+[33mcommit 7116592d6eb820e2859ed756a78297ecd1b97c70[m[33m ([m[1;33mtag: v1.1.1[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu May 2 01:59:20 2019 +0900
+
+    v1.1.1: macro plugin verup
+
+[33mcommit b0e7408d905c7c0a506a4b52c799a6bc17e93345[m[33m ([m[1;33mtag: v1.1.0[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu May 2 01:32:26 2019 +0900
+
+    v1.1.0: Updates related to GW advent calendar: macro plugin does not have compatibility
+
+[33mcommit c1ef49db96b4b79d6274d58589a25e2ece44131e[m[33m ([m[1;33mtag: v1.0.20[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Tue Apr 30 01:26:42 2019 +0900
+
+    forward command line args to picogw process
+
+[33mcommit 697969eee9c6608ff2ec014b85ef6c9d4e842b71[m[33m ([m[1;33mtag: v1.0.19[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu Mar 21 22:30:26 2019 +0900
+
+    1.0.19: admin plugin settings bugfix
+
+[33mcommit edcce43663664b27c51d73df9dd37a4829d0b6e6[m[33m ([m[1;33mtag: v1.0.18[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu Mar 21 20:34:12 2019 +0900
+
+    1.0.18: MQTT topic [MAC]-Req to [MAC]-req. MyID console display timing change, MyID API from /v1/admin/get_my_id to /v1/admin/id
+
+[33mcommit a2cfa480072a21673d84e98f015b73d87a83735f[m[33m ([m[1;33mtag: v1.0.17[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu Mar 21 17:40:49 2019 +0900
+
+    1.0.17:suppress message
+
+[33mcommit 7f820d752a63de38ae66a07567df32ec56a5f756[m[33m ([m[1;33mtag: v1.0.16[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu Mar 21 17:07:11 2019 +0900
+
+    1.0.16: mqtt, getMyID, better console message
+
+[33mcommit e71194883749514e718832cbe317e29404863292[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu Mar 21 16:10:22 2019 +0900
+
+    Console messages improved, unnecessary comments removed
+
+[33mcommit 29e0908f42d10c7f0707db35bc9c652c8aea86f1[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu Mar 21 15:36:56 2019 +0900
+
+    getMyID (plugin method) and /v1/admin/get_my_id (WebAPI) added
+
+[33mcommit 819ab9b684c6972a73fcab25cb045b1166847228[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Thu Mar 21 15:08:22 2019 +0900
+
+    MQTT implemented
+
+[33mcommit 378f029f054914af14e8cbddd8e0534e9b603c33[m[33m ([m[1;33mtag: v1.0.15[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Jan 28 19:58:31 2019 +0900
+
+    Show IP/MAC on cmd line, spinner for API call (frontend), macro store entry max set GUI
+
+[33mcommit d39a9c67559f2068c0a059338729e96f4aa4737e[m[33m ([m[1;33mtag: v1.0.14[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Tue Jan 15 09:53:34 2019 +0900
+
+    package.json update for v1.0.14
+
+[33mcommit 3cdd885a42b174f6b892ccf10a2a004d2de117d7[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Tue Jan 15 09:52:25 2019 +0900
+
+    "source" parameter (indicates caller plugin name) in ProcCall
+
+[33mcommit acdc663098f30483e11c84ee5299a525675e3ed6[m[33m ([m[1;33mtag: v1.0.13[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Wed Jan 2 22:14:54 2019 +0900
+
+    Deliver transport & files at onProcCall
+
+[33mcommit 50d01ee9452b1b4dfd67b001494e0219fb4d769a[m[33m ([m[1;33mtag: v1.0.12[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Fri Dec 28 17:52:24 2018 +0900
+
+    Better global package search in Windows bash
+
+[33mcommit d266991056ba9dadd86da58bec75e7eaa5ab9ef0[m[33m ([m[1;33mtag: v1.0.11[m[33m)[m
+Author: Shigeru Owada <pub@toyhack.club>
+Date:   Fri Dec 28 17:13:32 2018 +0900
+
+    Bugfix in boot script
+
+[33mcommit 3cfab5e5f63c2955b8a9cdb81451874bb54f0a08[m[33m ([m[1;33mtag: v1.0.10[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Dec 28 16:22:21 2018 +0900
+
+    echonet plugin update
+
+[33mcommit 1c969f8d6ab1f8e4d79312ef7ac9b973166b7474[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Dec 28 16:16:14 2018 +0900
+
+    Start with current path change
+
+[33mcommit e142423488fc7bc29bf7e31066af0a7760360d7e[m[33m ([m[1;33mtag: v1.0.9[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Dec 7 17:55:54 2018 +0900
+
+    ECHONET plugin updated (Buffer issue)
+
+[33mcommit c3253de2385971183171c9b5329d3134ca2287f9[m[33m ([m[1;33mtag: v1.0.8[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Nov 5 11:33:55 2018 +0900
+
+    Macro plugin updated / scripts runs in async function (await possible)
+
+[33mcommit ce592a4ed52eccc05b3eb479eaf9bdcafce0ddb1[m[33m ([m[1;33mtag: v1.0.7[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Nov 5 10:47:28 2018 +0900
+
+    Log plugin bugfix/DELETE method add
+
+[33mcommit c4ce19cfa0aa5ad0b86e10e84efbeea20a3a0e56[m[33m ([m[1;33mtag: v1.0.6[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Sep 6 23:08:10 2018 +0900
+
+    Updated web plugin for copy-pastable alert
+
+[33mcommit ad5a20f0463301a523846728c49dc6dad97ecb8b[m[33m ([m[1;33mtag: v1.0.5[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Sep 6 15:53:04 2018 +0900
+
+    web plugin ver.up to change path name separetor from . to ?
+
+[33mcommit 2a9efa8b6c14b3a29a55da46c3d731107e4d6bfb[m[33m ([m[1;33mtag: v1.0.4[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Wed Sep 5 05:55:41 2018 +0900
+
+    Accepts multipart data on POST message
+
+[33mcommit 9ef9730528f0405aee2f025b758183b11a988580[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Sep 3 12:04:57 2018 +0900
+
+    Error message improved
+
+[33mcommit b9fc9cb5bc0c77edc5616d5a075d197d5d726e38[m[33m ([m[1;33mtag: v1.0.3[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Aug 31 19:12:53 2018 +0900
+
+    Added "transport" field on callProc callback
+
+[33mcommit efa8186c6064b02956ac7a8510efc68a89470620[m[33m ([m[1;33mtag: v1.0.2[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Apr 13 10:47:49 2018 +0900
+
+    web and echonet plugin updated
+
+[33mcommit b4157da6c273f732e9ac1f93a4a32a03fa0fe4f9[m[33m ([m[1;33mtag: v1.0.1[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Apr 12 23:17:38 2018 +0900
+
+    v1.0.1 echonet minor bugfix, db/MACtoIP does not appear
+
+[33mcommit 6249508b74a22eac3867ac392185064f19374d54[m[33m ([m[1;33mtag: v1.0.0[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Apr 12 19:19:36 2018 +0900
+
+    v1.0.0
+
+[33mcommit 6b305e17965d1fdae45bac72d355597e04d0137f[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Apr 12 16:04:54 2018 +0900
+
+    Update PluginDevelopment.jp.md
+
+[33mcommit f89a3a3b12258137a380a1e0fa692a99f0e95516[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Apr 12 15:53:08 2018 +0900
+
+    README/PluginDevelopment.jp.md updated
+
+[33mcommit 7eee7c0456f293c4023f7238daf00ef24bd8aefa[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Wed Apr 11 10:42:12 2018 +0900
+
+    README update
+
+[33mcommit 7e429f97ae3edd81180f30cfaa3e7ae27a875a09[m[33m ([m[1;33mtag: v0.0.29[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Apr 5 20:40:00 2018 +0900
+
+    v0.0.29 echonet lower-case api
+
+[33mcommit c46ed91695b02ea5497c6776449b2b6e2580815e[m[33m ([m[1;33mtag: v0.0.28[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Mar 23 23:10:56 2018 +0900
+
+    macro plugin update for mode?history => modeHistory + publish mode change
+
+[33mcommit 9872ab0c8b7bddac1671cf52cb856895cbe12e85[m[33m ([m[1;33mtag: v0.0.27[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Mar 15 00:25:44 2018 +0900
+
+    v0.0.27: web&echonet plugin updated to implement DELETE method
+
+[33mcommit 53fb96480f126ad35fe21af86ed77567a9dd0e5c[m[33m ([m[1;33mtag: v0.0.26[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Wed Mar 14 13:47:13 2018 +0900
+
+    v0.0.26 echonet plugin update to v0.0.10
+
+[33mcommit 9f43fe6baebfd5f95e88f0a33af841f8f68bfc9a[m[33m ([m[1;33mtag: v0.0.25[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Mar 9 12:40:31 2018 +0900
+
+    v0.0.25: macro/web plugins updated
+
+[33mcommit df63fd7247f1c096352749d5def6339df037eb36[m[33m ([m[1;33mtag: v0.0.24[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Mar 9 01:25:31 2018 +0900
+
+    v0.0.24: macro plugin updated
+
+[33mcommit df5e50d65bfde22c437c07fca33306689512933d[m[33m ([m[1;33mtag: v0.0.23[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Tue Mar 6 21:30:40 2018 +0900
+
+    v0.0.23 : macro plugin updated
+
+[33mcommit 813b09d8a4293b38c6889bb3a26f9f5f865ff6a8[m[33m ([m[1;33mtag: v0.0.22[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Wed Feb 28 23:41:07 2018 +0900
+
+    v0.0.22: el plugin update
+
+[33mcommit e327e5efc7fabaca04b6c69b3f57ddc36dc1f0e3[m[33m ([m[1;33mtag: v0.0.21[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Tue Feb 20 13:23:02 2018 +0900
+
+    Null ver up to 0.0.21 to check cloud-based updating
+
+[33mcommit c207c8f52434feb6db1e2998be351d9091a04de2[m[33m ([m[1;33mtag: v0.0.20[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Feb 9 00:44:11 2018 +0900
+
+    v0.0.20 with v0.0.10 admin plugin that supports freebsd
+
+[33mcommit b5e00e73210b154b2d2134f0e3e1d2e28cabfbdd[m[33m ([m[1;33mtag: v0.0.19[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Feb 8 21:36:55 2018 +0900
+
+    v0.0.19, cancel the previous buggy update of admin plugin
+
+[33mcommit 6d2b4f39b914f7f90772b8ddbea505c70cf8aec7[m[33m ([m[1;33mtag: v0.0.18[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Feb 8 21:07:17 2018 +0900
+
+    v0.0.18 include newer admin plugin to support freebsd and some bugfixes
+
+[33mcommit b89c1857d0465595071f15a59ad0a859858be5ad[m[33m ([m[1;33mtag: v0.0.17[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Tue Feb 6 08:39:27 2018 +0900
+
+    v0.0.17: Auto-reboot on crash
+
+[33mcommit b13bba2de52dc9f5dc3939013432ff89b4518b9f[m[33m ([m[1;33mtag: v0.0.16[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Sun Feb 4 17:31:32 2018 +0900
+
+    web plugin ver.up
+
+[33mcommit d159c23ff03a9f5604674f95ca040ac918ff869d[m[33m ([m[1;33mtag: v0.0.15[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Sat Feb 3 03:07:13 2018 +0900
+
+    v0.0.15 / web plugin updated to accept ui customization a bit.
+
+[33mcommit 15b53b976fe90c4843f1eb8943796f0d2aecc4bf[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Sat Feb 3 02:00:29 2018 +0900
+
+    README updated
+
+[33mcommit 94c1a3bc8df953c7d82cd09e05b91ef66ee7155c[m[33m ([m[1;33mtag: v0.0.14[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Feb 2 23:21:25 2018 +0900
+
+    v0.0.14 / echonet bugfix
+
+[33mcommit ff539c0dc03343c820d3b93910c78aa34cb75700[m[33m ([m[1;33mtag: v0.0.13[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Feb 2 21:40:55 2018 +0900
+
+    v0.0.13: cleanup/debug+API call message removed, macro plugin added
+
+[33mcommit 42092add537dc793942093564e9b99e47358c80e[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Feb 2 19:31:55 2018 +0900
+
+    Add prefix '_' to private variable
+
+[33mcommit fafd6fd4df0004c42d2a257260c3bd16d3c374bf[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Feb 2 19:15:29 2018 +0900
+
+    Delete legacy codes
+
+[33mcommit 1dc9463de85fc3c7f3bb38bb7cc135614de9e358[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Feb 2 19:15:18 2018 +0900
+
+    Just executed "npm install"
+
+[33mcommit 4bbf05c27aad21bb830b97a6f2a7db4e0070f340[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Feb 2 17:07:06 2018 +0900
+
+    Add .eslintignore
+
+[33mcommit d8669d6bf81f2d7a1596ef75fca8069328a63cee[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Feb 2 17:03:14 2018 +0900
+
+    Resolve TODO comments
+
+[33mcommit 391bee4aa00842b0cc63fd2bef989965d66c6531[m[33m ([m[1;33mtag: v0.0.12[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Feb 2 18:11:50 2018 +0900
+
+    v0.0.12
+
+[33mcommit aa0b7efbc109cedff50ce6f5724e4ac632a563cd[m[33m ([m[1;33mtag: v0.0.11[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Feb 2 09:07:46 2018 +0900
+
+    v0.0.11
+
+[33mcommit bef260a5ba246e98052b771e1194db2c8a78f91c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Thu Feb 1 23:05:07 2018 +0900
+
+    Fix problem that reboot did not work
+
+[33mcommit df8500608e23bb0b20070f9c7162a567df4d6049[m[33m ([m[1;33mtag: v0.0.10[m[33m)[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 31 23:16:33 2018 +0900
+
+    Add postinstall to fix shebang in termux environment
+
+[33mcommit 3174a0d50171abadde088fa126621678885d64d5[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 31 18:37:19 2018 +0900
+
+    Add Code Climate setting
+
+[33mcommit 747e35ffc159de928323f9d7c93d1daa25183d6c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 31 18:36:45 2018 +0900
+
+    Add CircleCI configuration
+
+[33mcommit 99375e484a32ddb3418a5d6030096dc401238c14[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 31 18:35:27 2018 +0900
+
+    Add istanbul npm
+
+[33mcommit 91e5d18f661b41535b0091fbc53c91e21fad032f[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 31 16:15:09 2018 +0900
+
+    Fix lint error
+
+[33mcommit 2383a37ae11a290bd30784005839fbb10ca3a94d[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 31 16:14:31 2018 +0900
+
+    Fix an issue when config was undefined
+
+[33mcommit b0d75a4175ba4d1bf51ae5cddcbe4f32a388fdfb[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 31 15:59:22 2018 +0900
+
+    Just executed "npm install"
+
+[33mcommit 01eeb2560c9f613d45a7ebdfec947545543c5f90[m[33m ([m[1;33mtag: v0.0.9[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Wed Jan 31 01:36:06 2018 +0900
+
+    v0.0.9
+
+[33mcommit 69a7ccd2d456256404c9f3be86491c6b3b5f3daa[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Wed Jan 31 01:07:49 2018 +0900
+
+    v0.0.8 package update
+
+[33mcommit 737939b97f706bf8b82018553dd6ffc330889ba3[m[33m ([m[1;33mtag: v0.0.8[m[33m)[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Jan 30 22:59:37 2018 +0900
+
+    Move socket procedure from web plugin
+
+[33mcommit 27f881ef840e711883989eb1a501e977637742a4[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Jan 30 22:13:28 2018 +0900
+
+    Move REST API procedure from controller.js to http-server.js
+
+[33mcommit f03d3afd391f56fd10bf9e2612d13c06aa756f91[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Jan 30 22:12:43 2018 +0900
+
+    Just executed "npm install"
+
+[33mcommit a15fe5395c6c9931293551e0d7b8924912b5d4c7[m[33m ([m[1;33mtag: v0.0.7[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Jan 29 00:13:25 2018 +0900
+
+    web plugin version up to 0.0.5
+
+[33mcommit c76dfed33f786b10a330623c795ba1d17fb7ca23[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Jan 26 22:43:57 2018 +0900
+
+    The error response is returned when an error occurs
+
+[33mcommit a09c55a32d959f44f64e13ac9da5fcdfe282f48d[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Jan 26 22:42:49 2018 +0900
+
+    Fixed problem of forcibly converting to numerical value when incomplete numerical value was included
+
+[33mcommit 54e9aabd4f786309b2caeb22b886ad71458b54b3[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 24 16:49:10 2018 +0900
+
+    Fix plugin path
+
+[33mcommit ca41389ec09f72648d07e7173891306cd8f79b28[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 24 15:45:05 2018 +0900
+
+    Just running npm install
+
+[33mcommit ec3f0bd34c2018d013aec29c52faa2e513f7fcd3[m[33m ([m[1;33mtag: v0.0.6[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Tue Jan 23 15:46:29 2018 +0900
+
+    echonet,web plugin version up and rename and tag
+
+[33mcommit 4e3efe0a050568ef4d8318d8bbd01163e40deb1e[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Tue Jan 23 12:28:40 2018 +0900
+
+    PubSub path bugfix
+
+[33mcommit 7370b5088335cf975fe04941f53986a44330d8b0[m[33m ([m[1;33mtag: v0.0.5[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Jan 22 21:39:40 2018 +0900
+
+    admin plugin version up (v0.0.4)
+
+[33mcommit d96df5c026e10b09fa0ba071b203092616593bb4[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Jan 22 18:06:46 2018 +0900
+
+    README bugfix
+
+[33mcommit 9bce54e9999597002691fa891f0a6c6155e82e99[m[33m ([m[1;33mtag: v0.0.4[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Jan 22 17:27:48 2018 +0900
+
+    admin plugin version up
+
+[33mcommit c74a7baf16a01452071d922e769e8ddbc6391921[m[33m ([m[1;33mtag: v0.0.3[m[33m)[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Jan 22 15:54:30 2018 +0900
+
+    plugin repository changed
+
+[33mcommit abd2f63f972419ee58912f334f1a17dcbe6e077e[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Jan 22 15:51:33 2018 +0900
+
+    README/LICENSE updated
+
+[33mcommit 5a8a3d10db73ea40a5ad7b0699deb7bbcc2926e7[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Thu Jan 18 18:50:57 2018 +0900
+
+    Just update admin plugin commit hash
+
+[33mcommit 7b424b0566b6d68e16a5348bbf99dccc52ddea18[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 17 18:36:31 2018 +0900
+
+    Add config interface
+
+[33mcommit 762ced69cf76e7f654e6b9300c26c842df4b587f[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 17 16:03:43 2018 +0900
+
+    Fix tests
+
+[33mcommit a1a351fa23dd72a811b98403d4321644156c8922[m[33m ([m[1;33mtag: v0.0.2[m[33m)[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 17 15:48:58 2018 +0900
+
+    Rename to config.json from settings.json
+
+[33mcommit 5ee43a6d9e9a365726aa1ab6ff6aaf2941000852[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 17 15:11:31 2018 +0900
+
+    Update package-lock.json, but only changed the order of entries
+
+[33mcommit d8798f9ba45c9ca12a68b4426d62599814c29675[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Jan 16 22:59:50 2018 +0900
+
+    Add local-npms path in config.json
+
+[33mcommit b4e55e97d27390ee649109c6db96b53c568c338f[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Jan 16 22:35:50 2018 +0900
+
+    Rename to Config from Setting
+
+[33mcommit 2d9df27a3a09edfcda4a7dbcbacf6a912683641f[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Jan 16 21:34:20 2018 +0900
+
+    Change argument gatewayIP of routeSet to network interface
+
+[33mcommit e1129e0ec7d4e23d91296b346bfc87ed7667c950[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Jan 16 21:33:34 2018 +0900
+
+    Fix problem of setting value passing
+
+[33mcommit adee1c13d3e970122b413fffc22e5f800a95f576[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Jan 16 17:14:01 2018 +0900
+
+    Implement static route deletion
+
+[33mcommit c66fcbf6d0b2b0d50b8b6ea1ea408f891878e315[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Mon Jan 15 21:59:01 2018 +0900
+
+    Removed the setting of the first network interface found at startup. Because it can be operated to set the static routes manually.
+
+[33mcommit 4041ac3cc717e4c6712b100110fb26202798803e[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Mon Jan 15 20:39:14 2018 +0900
+
+    Implement to call onPluginsInitialized()
+
+[33mcommit d68c24a2027241d70bed72116a571e384d3e1e64[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Jan 12 23:25:57 2018 +0900
+
+    Just updated picogw-plugin-admin commit hash
+
+[33mcommit 588616be4627e6a03432409a061f2b9b38d8bf2e[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Jan 12 20:16:46 2018 +0900
+
+    Remove unused scripts and fix urls in package.json
+
+[33mcommit 9baa1c8d66a7136f41698bef1bdf9680bbc3a218[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Jan 12 20:13:14 2018 +0900
+
+    Remove unnecesarry plugins
+
+[33mcommit a0f77250b20599d5d531f48d08bfa0b30c6b0afb[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Jan 12 19:44:24 2018 +0900
+
+    Fix callback setting bug
+
+[33mcommit f51ccdd1a35d20aed6d933a6b2d4626b0692de8a[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Thu Jan 11 17:31:17 2018 +0900
+
+    Add supportedNetworkManager in plugin-interface-net.js
+
+[33mcommit f8f866ab8e267ce3923d442b04e3388bf2168895[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Jan 10 22:13:54 2018 +0900
+
+    Fix implementation of static routing
+
+[33mcommit c5e65d9e7c11649569ef2e43503cf5a7c3bc6d29[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Tue Dec 26 23:47:53 2017 +0900
+
+    catch globals.admin.getMACFromIPv4Address_Forward error and apply coding style
+
+[33mcommit 1505cc5ffbd55d6bb0b6592650ad4a6ca5dfe176[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Tue Dec 26 16:25:49 2017 +0900
+
+    developing
+
+[33mcommit d9186684e5e6b3f2a91867fb85b0ddca24a26db8[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 27 22:26:05 2017 +0900
+
+    Just updated plugins commit hash
+
+[33mcommit 42d1cd17c334d88b9729ea9d39115adb776649a8[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 27 21:59:23 2017 +0900
+
+    Output a warning in case of incorrect use of endpoint()
+
+[33mcommit 9b90c4557bb1ee4810d15173577222f39adcf0e1[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 27 21:19:21 2017 +0900
+
+    Just updated plugins commit hash
+
+[33mcommit 9e8bf24304ba1a29734c03ddb49dd796058afc9b[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 27 18:23:30 2017 +0900
+
+    Move API endpoint '/v*/*' from picogw-plugin-web
+
+[33mcommit 1412095f5d95e8c91a17e1c78ee834fb90e3cd2d[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 27 18:17:58 2017 +0900
+
+    When settings_default.json exists, it loads as default setting
+
+[33mcommit 2134d35ef426323d7dfc50b052f65300bd552f9f[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 26 22:31:43 2017 +0900
+
+    Just updated plugins commit hash
+
+[33mcommit 4e54c6ee9cc69946e56c47826557f305603536ae[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 26 22:03:56 2017 +0900
+
+    Fix an issue that raises an exception if setItem has a value of null or undefined
+
+[33mcommit d7c4eeb7ceee95759a929c271a55bdc4caf62125[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 26 21:07:54 2017 +0900
+
+    In the case of an API error, change the Promise object from reject to accept in order to store the error in the response
+
+[33mcommit cf704d1d08f5afcab645bf23bb5daf07b2d1ee1c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 26 20:11:56 2017 +0900
+
+    Just updated picogw-plugin-admin commit hash
+
+[33mcommit a8eeb11caf3255c594b977f85d3f0c3997d4c5ad[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 26 20:08:22 2017 +0900
+
+    Implement pluginfs on PluginInterface
+
+[33mcommit 8984f1cfc1d8f5bab66030f0948ca4b93275dc58[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 26 18:28:55 2017 +0900
+
+    Implement new plugin feature for settings
+
+[33mcommit 190cb183a8f98cdf938374e02d643984b0cf7231[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Mon Dec 25 15:53:42 2017 +0900
+
+    Fix inconsistency when multiple http plugins call endpoint function
+
+[33mcommit 5928e51d9ccbaefb355baac89e821f9d173741bf[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Mon Dec 25 14:59:42 2017 +0900
+
+    lint error partially fixed.
+
+[33mcommit 478e573582cf3eb578aba3d8b75d7c6a1198247c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 22 20:11:58 2017 +0900
+
+    Move express from picogw-plugin-web and add pluginInterface.http.endpoint
+
+[33mcommit 3555004f957545fabdaec3639367b89c9086c94f[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 22 18:50:42 2017 +0900
+
+    Add PluginInterfaceHttp and httpServer for adding endpoint
+
+[33mcommit 12bfac09396a5e60d61aaf3982ea937c79bb84f6[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Dec 22 15:56:41 2017 +0900
+
+    node-picogw-plugin-echonet in package-lock.json
+
+[33mcommit 75da3845a78d288fa69d7746a3f560ddba59d964[m
+Author: Shigeru Owada <sowd@acm.org>
+Date:   Fri Dec 22 14:43:35 2017 +0900
+
+    Still debuging plugin-interface-net
+
+[33mcommit 2860233d0582618704fcf6046ab8dfa8c2fa1e50[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Fri Dec 22 10:52:49 2017 +0900
+
+    ipmanager functions included
+
+[33mcommit 65ae6eb0bb3d47ed77c40894ccac921ae113519a[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Thu Dec 21 19:27:09 2017 +0900
+
+    Add localStorage and log into PluginInterfaceNet
+
+[33mcommit f7ccb93409d21ca81053ed4b5b98b1e1adfe4a99[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 20 21:40:19 2017 +0900
+
+    Just updated picogw-plugin-echonet commit hash
+
+[33mcommit 0f097a214f0aa941a579c9ec3ce3a3d8f73d875c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 20 16:38:34 2017 +0900
+
+    Upgrade version to 0.0.2 from 0.0.1
+
+[33mcommit 2b9df48e6b620deb023d5aef13b3fcda2b4f5531[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 19 16:53:21 2017 +0900
+
+    Upgrade version to 0.0.2 from 0.0.1
+
+[33mcommit 6e78ac058bf36a9f4794c5916f7bc0d44eaf06f6[m[33m ([m[1;33mtag: v0.0.1[m[33m)[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 15 22:10:51 2017 +0900
+
+    Add Setting class for picogw settings
+
+[33mcommit 43a7bd3d5eaa7c8abae40dce1fdd00e3d873dd6c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 15 21:14:52 2017 +0900
+
+    Add test framework 'mocha' and 'chai'
+
+[33mcommit 0753438cf3a5b0ecf8d7f3ca64009721bd6d6a11[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 15 20:31:11 2017 +0900
+
+    Add picogw command
+
+[33mcommit f7e9e3b8b397ecf4fe9d444702c938463395ad5c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 15 20:07:18 2017 +0900
+
+    Fix an issue that could not find embedded plugin of echonet, admin globally installed
+
+[33mcommit 2444032c7ecb368ccc65f11876fb5ee54528f486[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 15 15:01:21 2017 +0900
+
+    Change localStorage from SingleFileLocalStorage to QuotaLocalStorage
+
+[33mcommit d41f41674b8a7efd80e031aba5ea02a2bf79d045[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Thu Dec 14 22:34:38 2017 +0900
+
+    Just updated picogw-plugin-echonet commit hash
+
+[33mcommit a966e557569c19b7ba01f5374397ace8d28fa32a[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Thu Dec 14 18:13:02 2017 +0900
+
+    Just updated picogw-plugin-echonet and picogw-plugin-admin commit hash
+
+[33mcommit 5e80c7870326980272a6bd3853f6afaced9d11eb[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Thu Dec 14 18:04:40 2017 +0900
+
+    Remove unused file
+
+[33mcommit be0fafc2b12a55111a43830cee96d446f2e35d1e[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 12 21:17:30 2017 +0900
+
+    Refactoring commit. Avoid dangerous usage of for (.. in ..) loop.
+
+[33mcommit ceb04208d8c8293d7a1fc6c56f75505c7d2f0df2[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 8 22:09:58 2017 +0900
+
+    Apply coding style
+
+[33mcommit a5090eaa935bbbd2db8899211d7819b73b945c9e[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 8 17:41:00 2017 +0900
+
+    Install eslint and eslint-config-google for development environment
+
+[33mcommit a75cea1e8560c57bcd3ada5ac95cebd4908dac8e[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 8 16:26:07 2017 +0900
+
+    Remove unnecessary node-red files
+
+[33mcommit c294748d01a4f9437a34109574841aa9a0491b9c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 6 21:29:04 2017 +0900
+
+    Just updated picogw-plugin-echonet and picogw-plugin-web commit hash
+
+[33mcommit fdf601bd30ac0d08262042b905e1d1e36b08b344[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 6 21:00:50 2017 +0900
+
+    Network doc added
+
+[33mcommit ef7cad7ccd3d3dbc5e6fbd06c2f1c2cee9046081[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 6 20:57:08 2017 +0900
+
+    Change the storage path initialization process from plugin-interface.js to controller.js
+    
+    This is because we needed a path to store the encryption key before initializing the plugin.
+
+[33mcommit 7f1229bda72ef5a5f89ce310e47071a78f24298d[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 6 20:40:48 2017 +0900
+
+    Remove 'clients' folders because all clients are moved to npm
+
+[33mcommit cf3b9254d429ddb1eef65ea67f770fe6e277f81c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 6 19:15:00 2017 +0900
+
+    Add picogw-plugin-namedpipe and Remove old plugin folder for namedpipe
+
+[33mcommit a3e424755c648680b234b0c3a4e8b11de171948c[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Dec 6 19:20:11 2017 +0900
+
+    Filter only 'server' plugins for /v1/ access
+
+[33mcommit 2a3d29010e8d9bfdab49b5ccf0e1680b6e00d3d9[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 5 21:47:20 2017 +0900
+
+    Add picogw-plugin-openweathermap and Remove old plugin folder for openweathermap
+
+[33mcommit 70c81ddd392fd60ebd79180cd83d36c14ab2e47a[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 5 21:31:14 2017 +0900
+
+    Add picogw-plugin-healbe and Remove old plugin folder for healbe
+
+[33mcommit 08e9df1f502a26a97f1437fc063dbe858680af92[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 5 20:57:13 2017 +0900
+
+    Update package-lock.json, but only changed the order of entries
+
+[33mcommit db202b2ee0cb821f3a9ff2563f1ff497f9847424[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 5 20:49:58 2017 +0900
+
+    Add picogw-plugin-slack and Remove old plugin folder for slack
+
+[33mcommit b11101d06d3ff0a0d6f64b1cd37fc017ac176bee[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 5 20:45:52 2017 +0900
+
+    Update packaeg-lock.json
+
+[33mcommit 0cb6afb899a9feba771c5402d6a5ed9e3defcd3f[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 5 20:25:15 2017 +0900
+
+    Add picogw-plugin-db and Remove old plugin folder for db
+
+[33mcommit 8a4cea7a455ae3e743d0bdac6b51811a43a8297a[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 5 20:24:05 2017 +0900
+
+    Update plugins commit hash
+
+[33mcommit 91c65acfea1d1ffeeeaf9429a530b504722818f5[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 5 18:39:23 2017 +0900
+
+    Change function onCall to module.exports
+
+[33mcommit cef7ab42ff26c9b9d4b4767c714652bca73de5a8[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Dec 5 17:05:18 2017 +0900
+
+    Add picogw-plugin-admin and Remove old plugin folder for admin
+
+[33mcommit 08e5083d7b0e9fadd52e61aad4a3aca8d470614b[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 1 21:33:36 2017 +0900
+
+    Implement main.js for new architecture
+
+[33mcommit b2bb8e9eaf0426123160ce18d6401f6ec1c66d57[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 1 21:24:33 2017 +0900
+
+    Remove clients/web and packages of web plugin, because web plugin moved to npm plugin repository
+
+[33mcommit 5457a370bd95df1ba592903af78e3db9a82815bf[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 1 21:07:01 2017 +0900
+
+    Forward echonet plugin revision
+
+[33mcommit e491ca6ab0d35815d29005f25d03ecfd897aca0f[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 1 21:06:29 2017 +0900
+
+    Fix server interface
+
+[33mcommit a40a86de46724d95e850db13df7785072e31a22d[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Dec 1 19:48:09 2017 +0900
+
+    Implement settings feature
+
+[33mcommit d6bbe5b83fcb9137702376ce41a0d8deaa3913ac[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Thu Nov 30 15:28:49 2017 +0900
+
+    Change git repository format of echonet plugin in package.json
+
+[33mcommit 6470116322131d1b88af442bbb9455d06095f517[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Nov 29 22:34:13 2017 +0900
+
+    Add picogw-plugin-web
+
+[33mcommit 77381b90317e570412b56f5e403a43f6053bc876[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Nov 28 22:12:51 2017 +0900
+
+    Implement plugin interfaces
+
+[33mcommit d4af24c9d7322c6efc571e8ca414f2e3a05c83a6[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Mon Nov 27 21:03:06 2017 +0900
+
+    Rename filename
+
+[33mcommit 4310a222e06f66ad7227bf55e309490a6d075347[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Nov 24 21:49:31 2017 +0900
+
+    Rename filenames
+
+[33mcommit 59215313926983ffd472fb22c7918dd76efc6916[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Nov 24 19:07:04 2017 +0900
+
+    Just changed the function name from registerplugin to registerPlugin
+
+[33mcommit caf5fb26a3c9b7463a80c5ebe18e404fea036f82[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Nov 24 18:51:53 2017 +0900
+
+    Role name changed
+
+[33mcommit 0522279734529f205812bc85c11760789b68a7e0[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Wed Nov 22 17:06:11 2017 +0900
+
+    mv plugin's sources to lib directory
+
+[33mcommit 641d9b4da71e34404a5f2cf5178ffca0bb52cd8a[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Nov 17 16:53:52 2017 +0900
+
+    define role string to constant value
+
+[33mcommit 509a3e9f57dbd180c4b4fa187ef4b9d5bab886dd[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Fri Nov 17 15:09:50 2017 +0900
+
+    implement to initialize plugin
+
+[33mcommit 172542a17a33b6ced5af56755c10638ea3c22718[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Nov 14 22:29:35 2017 +0900
+
+    Refactoring registerplugin codes, using Promise.all.
+
+[33mcommit cfb6abffbc625cf2daa775804a9e4b94b54eff96[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Nov 14 20:49:46 2017 +0900
+
+    Factor out echonet plugin into node-picogw-plugin-echonet
+
+[33mcommit 927cfa8efbafa6b05c9eeab56cd297b7035e5139[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Tue Nov 14 17:12:36 2017 +0900
+
+    Fix loader implementation
+
+[33mcommit 356755949f691a4ac7cf4dc6e28134650ccd5872[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Mon Nov 13 22:41:21 2017 +0900
+
+    Factor out the loader of plugin into lib/plugin-loader
+
+[33mcommit 2fbcd54a1920b520e34656a47d74fb0a1d5370b8[m
+Author: Satoshi Ikeda <ikeda@koozyt.com>
+Date:   Mon Nov 13 20:22:09 2017 +0900
+
+    Copy codes from PicoGW repository
+
+[33mcommit 9a67112d5cfeb829c76d2c211bed6bf844b680b4[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Nov 9 10:46:43 2017 +0900
+
+    Update README.md
+
+[33mcommit 24499393b10884c5773a887830744417c72cc683[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Nov 9 10:15:46 2017 +0900
+
+    Update README.md
+
+[33mcommit dacfda34958f05ffc1bed89a26dc17943d7a835e[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Nov 9 10:02:16 2017 +0900
+
+    Update README.md
+
+[33mcommit 058e5d99415c79c8978f46a3e8d7d5fec53afad9[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Thu Nov 9 10:00:48 2017 +0900
+
+    Create README.md
+
+[33mcommit 6c30a8195c35acb2087be3e1baa3c4506fefda7b[m
+Author: Shigeru Owada <sgrowd@gmail.com>
+Date:   Wed Nov 8 20:12:45 2017 +0900
+
+    Initial commit
