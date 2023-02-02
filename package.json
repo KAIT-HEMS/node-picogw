@@ -15,7 +15,7 @@
     "fs-extra": "^8.1.0",
     "mqtt": "^4.2.8",
     "node-localstorage": "^2.1.5",
-    "npm": "^6.13.6",
+    "npm": "^9.4.1",
     "opts": "^1.2.7",
     "picogw-plugin-admin": "1.0.9",
     "picogw-plugin-db": "1.0.2",
