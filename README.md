@@ -46,6 +46,19 @@ By default, dynamic files are written into **~/.picogw** directory. If you want 
 $ picogw -c /path/to/config/file.json 
 ```
 
+Supplying plugin-specific argument:
+
+```bash
+$ picogw --plugin-arg-myplugin A=B
+```
+
+If you supply multiple arguments for a plugin, use the option multiple times.
+
+```bash
+$ picogw --plugin-arg-myplugin A=B --plugin-arg-myplugin C=D
+```
+
+
 ## Public plugins
 
 + [admin](https://www.npmjs.com/package/picogw-plugin-admin), [web](https://www.npmjs.com/package/picogw-plugin-web), [db](https://www.npmjs.com/package/picogw-plugin-db)  (mandatory, automatically installed)
@@ -57,7 +70,7 @@ $ picogw -c /path/to/config/file.json
 
 ## Documents
 
-[Partial documents in Japanese](http://lifedesign.tech/picogw/).
+[Partial documents in Japanese](https://hoikutech.com/picogw/).
 
 [How to develop your own PicoGW plugin](PluginDevelopment.jp.md) in Japanese.
 No English documents yet..sorry.

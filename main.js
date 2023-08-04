@@ -24,7 +24,7 @@ let pluginArgs ;
 	let newargv = [];
 	let ActivePluginArgs ;
 	for( let ai=0;ai<process.argv.length;++ai ){
-		console.log(`Argument ${ai+1} : ${process.argv[ai]}`);
+		//console.log(`Argument ${ai+1} : ${process.argv[ai]}`);
 		if( ActivePluginArgs != null ){
 			const eqs = process.argv[ai].split('=');
 			if( eqs.length==2 ){
@@ -34,7 +34,7 @@ let pluginArgs ;
 			continue;
 		}
 
-		const prefix = '--plugin_args_';
+		const prefix = '--plugin-args-';
 		if( process.argv[ai].indexOf(prefix)==0 ){
 			const pluginName = process.argv[ai].slice( prefix.length);
 			if( pluginArgs == null ) pluginArgs = {};
@@ -77,9 +77,9 @@ cmdOpts.parse([
 ], true);
 
 if( pluginArgs != null )
-	cmdOpts.plugin = pluginArgs;
+	cmdOpts.plugin_args = pluginArgs;
 
-controller.init({PubSub: PubSub, cmd_opts: cmdOpts}).then((re)=>{
+controller.init({PubSub: PubSub, cmd_opts: cmdOpts }).then((re)=>{
     log('Plugins have been initialized.');
 }).catch((e) => {
     console.error(e);
