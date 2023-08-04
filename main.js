@@ -13,7 +13,43 @@ if (process.platform == 'android') {
     }});
 }
 
+/////////////////////////////
 // Parse command line
+
+// Plugin specific argument definition:
+//  --plugin_args_echonet A=B
+
+let pluginArgs ;
+(()=>{
+	let newargv = [];
+	let ActivePluginArgs ;
+	for( let ai=0;ai<process.argv.length;++ai ){
+		console.log(`Argument ${ai+1} : ${process.argv[ai]}`);
+		if( ActivePluginArgs != null ){
+			const eqs = process.argv[ai].split('=');
+			if( eqs.length==2 ){
+				ActivePluginArgs[eqs[0]] = eqs[1];
+				ActivePluginArgs = null;
+			}
+			continue;
+		}
+
+		const prefix = '--plugin_args_';
+		if( process.argv[ai].indexOf(prefix)==0 ){
+			const pluginName = process.argv[ai].slice( prefix.length);
+			if( pluginArgs == null ) pluginArgs = {};
+
+			if( pluginArgs[pluginName]==null )
+				pluginArgs[pluginName] = {};
+			ActivePluginArgs = pluginArgs[pluginName];
+			continue;
+		}
+		newargv.push(process.argv[ai]);
+	}
+	process.argv = newargv;
+})();
+
+
 let cmdOpts = require('opts');
 cmdOpts.parse([
     {
@@ -40,6 +76,8 @@ cmdOpts.parse([
     },
 ], true);
 
+if( pluginArgs != null )
+	cmdOpts.plugin = pluginArgs;
 
 controller.init({PubSub: PubSub, cmd_opts: cmdOpts}).then((re)=>{
     log('Plugins have been initialized.');
