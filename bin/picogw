@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const forever = require('forever-monitor');
 const childProcess = require('child_process');
 
 // Sometimes, npm i -g target directory is missing from module search path.
@@ -20,16 +19,15 @@ sysDir = (sysDir+'').trim();
 
 
 try {
-	const child = new (forever.Monitor)(sysDir+'/picogw',{cwd:pathstr,args:process.argv});
-	//const child = new (forever.Monitor)(require.resolve('picogw'),{cwd:pathstr,args:process.argv});
-	child.on('exit:code',function(code){
+	let argv = [sysDir+'/picogw/main.js'].concat(process.argv);
+	const child = childProcess.spawn('node',argv,{cwd:pathstr});
+	child.on('exit',function(code){
 		if( code == 99 ){
-				console.log('PicoGW was exited without rebooting.');
-				child.stop();
-				process.exit();
+			console.log('PicoGW was exited without rebooting.');
+			child.stop();
+			process.exit();
 		}
 	})
-	child.start();
 } catch(e){
 	console.error('\u001b[31mPlease install PicoGW globally!\u001b[0m');
 }
