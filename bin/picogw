@@ -3,7 +3,8 @@
 __filename="$(readlink -f "$0")"
 pathstr="$(cd "$(dirname "$__filename")" && pwd)"
 
-# Set the current path as the script module path
+# Sometimes, npm i -g target directory is missing from module search path.
+# So set this script module path as current path.
 pi=${pathstr##*node_modules}
 pi=$((${#pathstr} - ${#pi}))
 if [ $pi -eq 0 ]; then
@@ -12,7 +13,7 @@ else
   pathstr=${pathstr:0:$pi}
 fi
 
-# Also, find picogw module from the globally installed picogw location
+# Also, find picogw module from the globally installed picogw location.
 sysDir=$(npm root -g | tr -d '\n')
 
 # Check if picogw is installed globally
@@ -21,6 +22,13 @@ if [ -z "$sysDir" ]; then
   exit 1
 fi
 
-# Run picogw
-cd $pathstr
-node "$sysDir/picogw/main.js" "${@:1:($#)}"
+while true; do
+  # Run picogw
+  cd $pathstr
+  node "$sysDir/picogw/main.js" "${@:1:($#)}"
+  exit_code=$?
+  if [ "$exit_code" -eq 99 ]; then
+    console.log('PicoGW was exited without rebooting.');
+    break
+  fi
+done
