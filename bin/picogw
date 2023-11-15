@@ -28,7 +28,7 @@ while true; do
   node "$sysDir/picogw/main.js" "${@:1:($#)}"
   exit_code=$?
   if [ "$exit_code" -eq 99 ]; then
-    console.log('PicoGW was exited without rebooting.');
+    echo "PicoGW was exited without rebooting."
     break
   fi
 done
