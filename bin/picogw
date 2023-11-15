@@ -1,33 +1,26 @@
-#!/usr/bin/env node
-const childProcess = require('child_process');
+#!/bin/bash
 
-// Sometimes, npm i -g target directory is missing from module search path.
-// So set this script module path as current path.
+__filename="$(readlink -f "$0")"
+pathstr="$(cd "$(dirname "$__filename")" && pwd)"
 
-let pi = __filename.lastIndexOf('node_modules');
-let pathstr;
-if( pi == -1 ){
-	pathstr = require('path').dirname(__filename);
-} else {
-	pathstr = __filename.substring( 0,pi )+'node_modules';
-}
+# Set the current path as the script module path
+pi=${pathstr##*node_modules}
+pi=$((${#pathstr} - ${#pi}))
+if [ $pi -eq 0 ]; then
+  pathstr=$pathstr/node_modules
+else
+  pathstr=${pathstr:0:$pi}
+fi
 
-// Also, find picogw module from the globally installed picogw location.
+# Also, find picogw module from the globally installed picogw location
+sysDir=$(npm root -g | tr -d '\n')
 
-let sysDir = childProcess.execSync('npm root -g');
-sysDir = (sysDir+'').trim();
+# Check if picogw is installed globally
+if [ -z "$sysDir" ]; then
+  echo -e "\e[31mPlease install PicoGW globally!\e[0m"
+  exit 1
+fi
 
-
-try {
-	let argv = [sysDir+'/picogw/main.js'].concat(process.argv);
-	const child = childProcess.spawn('node',argv,{cwd:pathstr});
-	child.on('exit',function(code){
-		if( code == 99 ){
-			console.log('PicoGW was exited without rebooting.');
-			child.stop();
-			process.exit();
-		}
-	})
-} catch(e){
-	console.error('\u001b[31mPlease install PicoGW globally!\u001b[0m');
-}
+# Run picogw
+cd $pathstr
+node "$sysDir/picogw/main.js" "${@:1:($#)}"
