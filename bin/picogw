@@ -3,6 +3,8 @@
 __filename="$(readlink -f "$0")"
 pathstr="$(cd "$(dirname "$__filename")" && pwd)"
 
+trap 'kill $(jobs -p) ; exit 1' INT
+
 # Sometimes, npm i -g target directory is missing from module search path.
 # So set this script module path as current path.
 pi=${pathstr##*node_modules}
